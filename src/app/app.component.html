@@ -1,0 +1,10 @@
+<nav>
+  <a routerLink="/home" routerLinkActive="active">Home</a> |
+  <a routerLink="/about" routerLinkActive="active">About</a> |
+  <a [routerLink]="['/user', 101]">User 101</a> |
+  <a routerLink="/dashboard">Dashboard (Guarded)</a> |
+  <a routerLink="/admin">Admin (Lazy)</a>
+</nav>
+
+<hr />
+<router-outlet></router-outlet>
